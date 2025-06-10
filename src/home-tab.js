@@ -1,17 +1,11 @@
-const display = (() => {
-    class display {
-        constructor() {
-            this.mainContainer = document.querySelector('#content');
-        }
-
-        update() {
-            const container = this.mainContainer;
-            container.textContent = '';
-            
-        }
+class Display {
+    constructor() {
+        this.mainContainer = document.querySelector('#content');
     }
 
-    return new display();
-})();
+    update() {
+        this.mainContainer.textContent = '';
+    }
+}
 
-export const homeDisplay = display;
+export const homeDisplay = new Display();
