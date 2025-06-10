@@ -1,3 +1,64 @@
+@font-face {
+    font-family: 'Amita Regular';
+    src: url('./fonts/amita-regular-webfont.woff'),
+        url("./fonts/amita-regular-webfont.woff2")
+    ;
+}
+
+@font-face {
+    font-family: 'Amita Bold';
+    src: url("./fonts/amita-bold-webfont.woff"),
+        url("./fonts/amita-bold-webfont.woff2")
+    ;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rebeccapurple;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./imgs/Pizza.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: slategray;
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding-bottom: 1.5rem;
+}
+
+nav > h1 {
+    color: whitesmoke;
+    font-size: 4rem;
+    font-family: 'Amita Bold', 'Amita Regular', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+nav > div {
+    display: flex;
+    gap: 25px;
 }
