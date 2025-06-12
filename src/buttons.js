@@ -21,4 +21,6 @@ class Controller {
     }
 }
 
+homeDisplay.update()
+
 export const buttonsController = new Controller;
