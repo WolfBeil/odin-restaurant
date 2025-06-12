@@ -38,15 +38,14 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     padding-bottom: 1.5rem;
 }
 
 nav > h1 {
     color: whitesmoke;
     font-size: 4rem;
-    font-family: 'Amita Bold', 'Amita Regular', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Amita Bold', 'Amita Regular';
     margin: 0;
 }
 
@@ -61,4 +60,44 @@ button {
 nav > div {
     display: flex;
     gap: 25px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 50%;
+    font-size: 1.25rem;
+    
+}
+
+#content > div:first-child > p {
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+.pizzas-heading {
+    font-family: 'Amita Regular';
+}
+
+.pizza-div {
+    width: 100%;
+    padding: 5px;
+}
+
+
+#content > .pizza-div:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.25);
 }

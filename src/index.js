@@ -1,8 +1,8 @@
 import "./styles.css";
 import { homeDisplay } from "./home-tab";
-import { menuDisplay } from "./menu-tab";
-import { aboutDisplay } from "./about-tab";
+import { buttonsController } from "./buttons";
 
 console.log('Working Correctly');
 
-
+// homeDisplay.update();
+homeDisplay.update();
